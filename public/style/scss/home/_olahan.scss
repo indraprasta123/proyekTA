@@ -1,0 +1,166 @@
+.olahan {
+    padding: 40px;
+    &__title {
+        margin-top: 10px;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .absolute {
+            position: absolute;
+            font-weight: 100;
+            top: -25px;
+            margin: 0;
+            font-size: 80px;
+            font-family: "Great Vibes", cursive;
+            color: #ffde59;
+        }
+        h2 {
+            position: relative;
+        }
+    }
+    &__content {
+        margin: 20px;
+        &__drink {
+            margin-top: 70px;
+        }
+        &__slider2 {
+            display: none;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.2s ease-in;
+            margin: 10px;
+            &:hover {
+                background-color: #FFC107;
+                color: white;
+                transition: 0.2s ease-in;
+            }
+            
+        }
+        &__images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 200px;
+            border-radius: 10px;
+        }
+        &__btn {
+            margin-top: 100px;
+            text-align: center;
+            a {
+                padding: 10px 15px;
+                background-color: #FFC107;
+                color: white;
+                border: 1px solid #FFC107;
+                border-radius: 5px;
+                transition: 0.2s ease-in;
+                &:hover {
+                    border: 1px solid #FFC107;
+                    color: #FFC107;
+                    background-color: white;
+                    transition: 0.2s ease-in;
+                }
+            }
+        }
+    }
+    .slick-next {
+        color: black;
+        &::before {
+            color: #FFC107;
+            font-size: 25px;
+        }
+    }
+    
+    .slick-prev {
+        color: black;
+        &::before {
+            color: #FFC107;
+            font-size: 25px;
+        }
+    }
+    
+    .slick-dots li button {
+        border: 1px solid #FFC107;
+        border-radius: 50%;
+        &::before {
+            color: transparent;
+        }
+    }
+    
+    .slick-dots li.slick-active button {
+        &::before {
+            color: transparent;
+        }
+        background: #FFC107;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 767.98px) {
+    .olahan {
+        padding: 20px;
+        &__title {
+            margin-top: 30px;
+            .absolute {
+                font-size: 70px;
+                top: -20px;
+            }
+        }
+        &__content {
+            &__slider1 {
+                display: none;
+            }
+            &__slider2 {
+                display: block;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575.86px) {
+    .olahan {
+        &__title {
+            .absolute {
+                font-size:60px;
+                top: -15px;
+            }
+        }
+    }
+    .slick-next , .slick-prev {
+        &::before {
+            font-size: 20px;
+        }
+    }
+
+    .slick-dots li button {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media only screen and (max-width: 320.98px) {
+    .olahan {
+        &__title {
+            .absolute {
+                font-size:50px;
+                top: -10px;
+            }
+        }
+    }
+}

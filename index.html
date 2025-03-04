@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
+    <link rel="stylesheet" href="./public/style/scss/index.css"> 
+    <title>Rumah Makan Bersama</title>
+</head>
+<body>
+    <header class="head">
+        <nav class="head__nav">
+            <div class="head__logo">
+                <a href="#p-home" class="head__logo__link">
+                    <img class="head__logo__icon" src="./public/images/logo/bersama.png" alt="logo">
+                </a>
+            </div>
+            <div class="head__menu">
+                <ul class="head__menu__list animation">
+                    <li class="head__menu__item">
+                        <a href="#p-home" class="head__menu__link hover" id="bold">Beranda</a>
+                    </li>
+                    <li class="head__menu__item">
+                        <a href="./src/about.html" class="head__menu__link hover">Tentang</a>
+                    </li>
+                    <li class="head__menu__item">
+                        <a href="./src/produk.html" class="head__menu__link hover">Produk</a>
+                    </li>
+                    <li class="head__menu__item">
+                        <a href="./src/contact.html" class="head__menu__link hover">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="cart mobile " href="./src/login.html">
+                <img class="white" src="./public/images/icon/shopping-cart-white.png" alt="keranjang">
+                <img class="orange" src="./public/images/icon/shopping-cart.png" alt="keranjang">
+            </a>
+            <div class="head__ham-menu">
+                <button id="show-menu" class="head__button">
+                    <span class="head__button__bar"></span>
+                    <span class="head__button__bar"></span>
+                    <span class="head__button__bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="home__banner">
+                <div class="container">
+                    <div class="home__wrapper">
+                        <div class="home__overlay"></div>
+                        <div class="home__content">
+                            <div class="home__title">
+                                <h1>RUMAH MAKAN BERSAMA</h1>
+                                <h3>Nikmati Lezatnya Hidangan Kambing & Layanan Aqiqah Terbaik!.</h3>
+                            </div>
+                            <div class="home__btn">
+                                <a href="#" class="home__btn__link">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="restaurant">
+            <div class="restaurant_container">
+                <div class="restaurant__wrapper">
+                    <div class="restaurant__content">
+                        <div class="restaurant__title">
+                            <h1 class="absolute" >Welcome</h1>
+                            <h2>Rumah Makan Bersama</h2>
+                        </div>
+                        <div class="restaurant__content__images">
+                            <img src="./public/images/logo/bersama.png" alt="gambar1">
+                            <!-- <img class="absolute" src="./public/images/produk/asap1.gif" alt="gambar2"> -->
+                            <div class="bg" ></div>
+                        </div>
+                        <div class="restaurant__content__desc">
+                            <div class="restaurant__content__txt">
+                                <p>Selamat datang di Rumah makan Bersama, pusat kuliner olahan kambing yang menggugah selera! Kami tidak hanya menyajikan hidangan bercita rasa tinggi, tetapi juga menyediakan layanan paket Aqiqah berkualitas, lengkap dengan
+                                kemasan higienis dan rasa yang terjamin.</p>
+                                <p>Dari sate kambing yang empuk, gulai yang kaya rempah, hingga tongseng khas, semua disajikan dengan bahan berkualitas
+                                terbaik. Nikmati kelezatan olahan kambing yang halal, sehat, dan penuh cinta untuk keluarga Anda.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant_superiority">
+                        <div class="restaurant__superiority__box">
+                            <div class="restaurant__superiority__item">
+                                <div class="restaurant__superiority__icon">
+                                    <img class="white" src="./public/images/icon/quran-white.png" alt="quran">
+                                    <img class="yellow" src="./public/images/icon/quran-orange.png" alt="quran">
+                                </div>
+                                <div class="restaurant__superiority__txt">
+                                    <h3>SYAR'I</h3>
+                                    <p>Kami menjalankan setiap amanah ibadah aqiqah dari Anda sesuai dengan ketentuan-ketentuan Syariat Islam juga mengacu pada sunnah & risalah aqiqah yang disampaikan Rasulullah Muhammad.</p>
+                                </div>
+                                <img class="img-absolute" src="./public/images/icon/quran-white.png" alt="">
+                            </div>
+                            <div class="restaurant__superiority__item">
+                                <div class="restaurant__superiority__icon">
+                                    <img class="white" src="./public/images/icon/delivery-white.png" alt="DELIVERY">
+                                    <img class="yellow" src="./public/images/icon/delivery-orange.png" alt="DELIVERY">
+                                </div>
+                                <div class="restaurant__superiority__txt">
+                                    <h3>SIAP ANTAR</h3>
+                                    <p>Kami siap mengantarkan pesanan aqiqah Anda tepat pada waktunya. Memudahkan Anda memilih domba/kambing sesuai dengan keinginan karena RM. Bersama memiliki showroom hewan aqiqah sendiri.</p>
+                                </div>
+                                <img class="img-absolute" src="./public/images/icon/delivery-white.png" alt="delivery">
+                            </div>
+                            <div class="restaurant__superiority__item">
+                                <div class="restaurant__superiority__icon">
+                                    <img class="white" src="./public/images/icon/restaurant-white.png" alt="SEDAP">
+                                    <img class="yellow" src="./public/images/icon/restaurant-orange.png" alt="SEDAP">
+                                </div>
+                                <div class="restaurant__superiority__txt">
+                                    <h3>SEDAP</h3>
+                                    <p>Kami memastikan setiap hasil olahan masakan/sajian menu dijamin mempunyai hasil akhir yang sedap & berkualitas untuk Anda, karena kami mempunyai tenaga masak yang ahli, handal & profesional di bidangnya.</p>
+                                </div>
+                                <img class="img-absolute" src="./public/images/icon/restaurant-white.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aqiqah">
+            <div class="aqiqah__container">
+                <div class="aqiqah__wrapper">
+                    <div class="aqiqah__title">
+                        <h1 class="absolute">Aqiqah</h1>
+                        <h2>Pilihan Paket Aqiqah</h2>
+                        <p>Beragam pilihan paket aqiqah dari RM. Bersama, menu yang SEDAP, Setiap masakan terjamin halal, karena RM. Bersama sudah tersertifikasi HALAL-MUI dalam kategori Katering</p>
+                    </div>
+                    <div class="aqiqah__content">
+                        <div class="aqiqah__content__flex">
+                            <div class="aqiqah__content__item">
+                                <div class="aqiqah__content__images">
+                                    <img src="./public/images/produk/aqiqah/3.Paket-Premium-Nasi-Kebuli-1.jpg" alt="">
+                                </div>
+                                <div class="aqiqah__content__desc">
+                                    <h3>Aqiqah Paket Premium</h3>
+                                    <p>Tasyakur Ayah-Bunda semakin terasa spesial. Paket aqiqah yang lebih lengkap isinya, lebih istimewa packaging-nya</p>
+                                </div>
+                            </div>
+                            <div class="aqiqah__content__item">
+                                <div class="aqiqah__content__images">
+                                    <img src="./public/images/produk/aqiqah/8.Paket-Kebuli-Basmati.jpg" alt="">
+                                </div>
+                                <div class="aqiqah__content__desc">
+                                    <h3>Aqiqah Paket Kebuli</h3>
+                                    <p>Cita rasa menu Khas Timur Tengah yang sedap namun juga cocok dengan selera masyarakat pada umumnya</p>
+                                </div>
+                            </div>
+                            <div class="aqiqah__content__item">
+                                <div class="aqiqah__content__images">
+                                    <img src="./public/images/produk/aqiqah/7.Paket-Spesial.jpg" alt="">
+                                </div>
+                                <div class="aqiqah__content__desc">
+                                    <h3>Aqiqah Paket Reguler</h3>
+                                    <p>Beragam pilihan menu sedap yang tersedia pada Paket Regular mulai dari cita rasa Nusantara, Asia, & Western</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aqiqah__btn">
+                            <a href="">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="olahan" >
+            <div class="olahan__container">
+                <div class="olahan__wrapper">
+                    <div class="olahan__title">
+                        <h1 class="absolute" >Olahan</h1>
+                        <h2>Pilihan Olahan Masakan</h2>
+                        <p>Nikmati berbagai hidangan olahan kambing terbaik yang dimasak dengan resep spesial dan bahan berkualitas tinggi. Setiap sajian kami dibuat dengan bumbu pilihan yang meresap sempurna, menghasilkan rasa yang kaya dan menggugah selera.</p>
+                    </div>
+                    <div class="olahan__content">
+                        <div class="olahan__content__food">
+                            <h3>Menu Makanan Olahan Kambing</h3>
+                            <div class="olahan__content__caraousel">
+                                <div class="olahan__content__slider1">
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/makanan/sate-kambing.jpeg" alt="sate kambing">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Sate Kambing</h3>
+                                            <p>Daging kambing pilihan yang empuk, dipanggang sempurna dengan bumbu khas dan disajikan dengan sambal kecap yang nikmat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/makanan/gulai_kambing.jpg" alt="gulai kambing">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Gulai Kambing</h3>
+                                            <p>Kuah santan kental dengan perpaduan rempah-rempah yang kaya, menghasilkan cita rasa gurih dan lezat di setiap suapan.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/makanan/tongseng.jpg" alt="tongseng kambing">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Tongseng Kambing</h3>
+                                            <p>Hidangan khas dengan potongan daging kambing yang dimasak dengan kuah manis pedas, lengkap dengan kol dan tomat segar.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/makanan/nasi-kebuli.jpg" alt="nasi kebuli kambing">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Nasi Goreng Kambing</h3>
+                                            <p>Nasi kebuli khas Timur Tengah dengan daging kambing yang gurih dan rempah yang kaya membuat masakan menjadi sedap.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/makanan/rendang.webp" alt="Rendang kambing">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Rendang Kambing</h3>
+                                            <p>Olahan daging kambing yang dimasak lama dengan bumbu khas Minang, menghasilkan tekstur lembut dan rasa yang kaya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="olahan__content__slider2">
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/makanan/sate-kambing.jpeg" alt="sate kambing">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Sate Kambing</h3>
+                                            <p>Daging kambing pilihan yang empuk, dipanggang sempurna dengan bumbu khas dan disajikan dengan sambal kecap yang nikmat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/makanan/gulai_kambing.jpg" alt="gulai kambing">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Gulai Kambing</h3>
+                                            <p>Kuah santan kental dengan perpaduan rempah-rempah yang kaya, menghasilkan cita rasa gurih dan lezat di setiap suapan.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/makanan/tongseng.jpg" alt="tongseng kambing">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Tongseng Kambing</h3>
+                                            <p>Hidangan khas dengan potongan daging kambing yang dimasak dengan kuah manis pedas, lengkap dengan kol dan tomat segar.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/makanan/nasi-kebuli.jpg" alt="nasi kebuli kambing">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Nasi Goreng Kambing</h3>
+                                            <p>Nasi kebuli khas Timur Tengah dengan daging kambing yang gurih dan rempah yang kaya membuat masakan menjadi sedap.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/makanan/rendang.webp" alt="Rendang kambing">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Rendang Kambing</h3>
+                                            <p>Olahan daging kambing yang dimasak lama dengan bumbu khas Minang, menghasilkan tekstur lembut dan rasa yang kaya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="olahan__content__drink">
+                            <h3>Menu Minuman RM. bersama</h3>
+                            <div class="olahan__content__caraousel">
+                                <div class="olahan__content__slider1">
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/minuman/estehh.jpg">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Es Teh</h3>
+                                            <p>Kesegaran teh pilihan dengan rasa manis yang pas, cocok untuk menemani hidangan Anda..</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/minuman/esjeruk.jpg">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Es Jeruk</h3>
+                                            <p>Minuman segar dari jeruk asli yang kaya vitamin C, memberikan kesegaran alami.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/minuman/kopi-susu.jpg" alt="Kopi Susu">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Kopi Susu</h3>
+                                            <p>Perpaduan kopi pilihan dan susu segar yang menghasilkan rasa creamy dan nikmat, cocok untuk dinikmati kapan saja.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/minuman/kopi-hitam.png" alt="kopi hitam tubruk">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Kopi Hitam Tubruk</h3>
+                                            <p>Kopi khas Indonesia dengan cita rasa kuat dan aroma yang menggugah semangat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/minuman/airmineral.jpg" alt="Air Mineral">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Air Mineral</h3>
+                                            <p>Pilihan minuman sehat dan segar untuk menemani santapan Anda.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="olahan__content__slider2">
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/minuman/estehh.jpg">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Es Teh</h3>
+                                            <p>Kesegaran teh pilihan dengan rasa manis yang pas, cocok untuk menemani hidangan Anda..</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/minuman/esjeruk.jpg">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Es Jeruk</h3>
+                                            <p>Minuman segar dari jeruk asli yang kaya vitamin C, memberikan kesegaran alami.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/minuman/kopi-susu.jpg" alt="Kopi Susu">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Kopi Susu</h3>
+                                            <p>Perpaduan kopi pilihan dan susu segar yang menghasilkan rasa creamy dan nikmat, cocok untuk dinikmati kapan saja.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/minuman/kopi-hitam.png" alt="kopi hitam tubruk">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Kopi Hitam Tubruk</h3>
+                                            <p>Kopi khas Indonesia dengan cita rasa kuat dan aroma yang menggugah semangat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="olahan__content__item">
+                                        <div class="olahan__content__images">
+                                            <img src="./public/images/produk/minuman/airmineral.jpg" alt="Air Mineral">
+                                        </div>
+                                        <div class="olahan__content__desc">
+                                            <h3>Air Mineral</h3>
+                                            <p>Pilihan minuman sehat dan segar untuk menemani santapan Anda.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="olahan__content__btn">
+                                    <a href="">Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="order">
+            <div class="order__container container">
+                <div class="order__wrapper">
+                    <div class="order__header">
+                        <h1 class="absolute" >Order</h1>
+                        <h2>Proses Pemesanan</h2>
+                        <p>Langkah - langkah Cara Pemesanan Produk di RM. Bersama</p>
+                    </div>
+                    <div class="order__step">
+                        <div class="order__step__feature">
+                            <div class="order__step__box">
+                                <div class="order__step__circle" id="bg-color">
+                                </div>
+                                <div class="order__step__content">
+                                    <div class="order__step__txt" id="step-1">
+                                        <h3> 01 </h3>
+                                        <p class="order__step__desc">Pastikan pilih Pesanan anda.</p>
+                                    </div>
+                                    <div class="order__step__img">
+                                        <img src="./public/images/icon/restaurant.png" alt="produk">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__step__box">
+                                <div class="order__step__circle">
+                                </div>
+                                <div class="order__step__content">
+                                    <div class="order__step__txt" id="step-2">
+                                        <h3> 02 </h3>
+                                        <p class="order__step__desc">Checkout  Pesanan Anda.</p>
+                                    </div>
+                                    <div class="order__step__img left-side-img1">
+                                        <img src="./public/images/icon/checklist.png" alt="checkout">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__step__box">
+                                <div class="order__step__circle">
+                                </div>
+                                <div class="order__step__content ex-bottom">
+                                    <div class="order__step__txt"id="step-3">
+                                        <h3> 03 </h3>
+                                        <p class="order__step__desc">Memilih Lokasi yang akan Dituju.</p>
+                                    </div>
+                                    <div class="order__step__img">
+                                        <img src="./public/images/icon/map.png" alt="map">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__step__box">
+                                <div class="order__step__circle">
+                                </div>
+                                <div class="order__step__content">
+                                    <div class="order__step__txt"id="step-4">
+                                        <h3> 04 </h3>
+                                        <p class="order__step__desc">Pilih Pembayaran Anda</p>
+                                    </div>
+                                    <div class="order__step__img left-side-img2">
+                                        <img src="./public/images/icon/wallet.png" alt="pembayaran">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__step__box">
+                                <div class="order__step__circle">
+                                </div>
+                                <div class="order__step__content ex-bottom">
+                                    <div class="order__step__txt"id="step-5">
+                                        <h3> 05 </h3>
+                                        <p class="order__step__desc">Proses Sembelih dan Masak.</p>
+                                    </div>
+                                    <div class="order__step__img">
+                                        <img src="./public/images/icon/goat.png" alt="proses pengelolaan">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__step__box">
+                                <div class="order__step__circle">
+                                </div>
+                                <div class="order__step__content">
+                                    <div class="order__step__txt"id="step-6">
+                                        <h3> 06 </h3>
+                                        <p class="order__step__desc">Pengantaran ke Alamat Tujuan.</p>
+                                    </div>
+                                    <div class="order__step__img left-side-img2 delivery">
+                                        <img src="./public/images/icon/delivery-van.png" alt="pengantaran">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="cta__banner">
+                <div class="container">
+                    <div class="cta__wrapper">
+                        <div class="cta__overlay"></div>
+                        <div class="cta__content">
+                            <div class="cta__title">
+                                <h2>Jadi, Tunggu Apa Lagi?</h2>
+                                <p>Pesan aqiqah dan Menu Masakan kambing sekarang di RM. Bersama, mudah dan praktis.</p>
+                            </div>
+                            <div class="cta__btn">
+                                <a href="#" class="cta__btn__link">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__wrapper">
+                <div class="footer__feature">
+                    <div class="footer__content">
+                        <div class="footer__about">
+                            <img src="./public/images/logo/bersama.png" alt="bersama_logo">
+                            <p>RM. Bersama menyediakan paket Aqiqah dan menyediakan berbgai macam menu masakan olahan dari daging kambing dan sip antar sampai rumah anda.</p>
+                        </div>
+                        <div class="footer__information">
+                            <div class="footer__information__title">
+                                <h3>Informasi</h3>
+                            </div>
+                            <div class="footer__information__list">
+                               <div class="footer__information__item">
+                                <a href="#">Beranda</a>
+                               </div>
+                               <div class="footer__information__item">
+                                <a href="./src/about.html">Tentang</a>
+                               </div>   
+                               <div class="footer__information__item">
+                                <a href="./src/produk.html">Produk</a>
+                               </div>  
+                               <div class="footer__information__item">
+                                <a href="./src/contact.html">Kontak</a>
+                               </div>  
+                            </div>
+                        </div>
+                        <div class="footer__contact">
+                            <div class="footer__contact__title">
+                                <h3>Contact</h3>
+                            </div>
+                            <div class="footer__contact__item">
+                                <div class="footer__contact__txt">
+                                    <p>Maps : <span>RM. Bersama</span></p>
+                                    <p>Alamat : 7274+R55, Rw. 07, Pangenrejo, Kec. Purworejo, Kabupaten Purworejo, Jawa Tengah</p>
+                                    <p>Telepon : 0813 9279 8298</p>
+                                    <p>Buka Senin - Minggu : 08.00 - 17.00</p>
+                                </div>
+                            </div>
+                            <div class="footer__contact__sosmed">
+                                <a href="" class="footer__contact__url instagram">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <a href="" class="footer__contact__url youtube">
+                                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                                </a>
+                                <a href="" class="footer__contact__url tiktok">
+                                    <img src="./public/images/icon/tik-tok.png" alt="tik-tok">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>© All right reserved By Indraprasta RM. Bersama 2025</p>
+            <a href="" alt="whatsapps"></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="./public/style/js/script.js"></script>   
+</body>
+</html>

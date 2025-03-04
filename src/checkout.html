@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style/scss/index.css">
+    <title>Checkou Page</title>
+</head>
+<body>
+    <header class="co-header">
+        <nav class="co-header__nav">
+            <div class="co-header__logo">
+                <a href="#p-home" class="co-header__logo__link">
+                    <img src="../public/images/logo/bersama.png" alt="logo">
+                </a>
+                <h3>RM. Bersama</h3>
+            </div>
+            <div class="co-header__menu">
+                <div class="co-header__menu__flex">
+                    <div class="co-header__menu__item">
+                        <div class="co-header__menu__box">
+                            <div class="co-header__menu__circle bold"></div>
+                            <p>Checkout</p>
+                        </div>
+                        <div class="co-header__menu__row none"></div>
+                    </div>
+                    <div class="co-header__menu__item none">
+                        <div class="co-header__menu__box">
+                            <div class="co-header__menu__circle"></div>
+                            <p>Payment</p>
+                        </div>
+                        <div class="co-header__menu__row"></div>
+                    </div>
+                    <div class="co-header__menu__item none">
+                        <div class="co-header__menu__box">
+                            <div class="co-header__menu__circle"></div>
+                            <p>Review</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="co-order">
+            <div class="co-order__wrapper">
+                <div class="co-order__title">
+                    <h3>Pesanan Saya</h3>
+                    <div class="link">
+                        <a href="../index.html">Beranda</a>
+                        <a href="history.html">Riwayat Pesanan</a>
+                    </div>
+                </div>
+                <div class="co-order__content">
+                    <div class="co-order__content__item">
+                        <div class="co-order__content__left">
+                            <img src="../public/images/produk/aqiqah/3.Paket-Premium-Nasi-Kebuli-1.jpg" alt="sate">
+                            <div class="co-order__content__desc">
+                                <h3>Aqiqah Paket Premium</h3>
+                                <div class="co-order__content__accordion">
+                                    <button onclick="accordion('acc-section1')" class="acc-btn">
+                                        <p>Deskripsi</p>
+                                        <img id="acc-section1-arrow" class="acc-arrow" src="https://www.eurkos.com/assets/arrow_down.svg">
+                                    </button>
+                                    <div id="acc-section1" class="acc-hide">
+                                        <p>Isi Dalam Paket:</p>
+                                        <p>50 Porsi</p>
+                                        <p>Menu Olahan Daging: Sate Kambing, Gulai Kambing, Tongseng Kambing, Rendang Kambing.</p>
+                                        <p>Nasi Kebuli</p>
+                                        <p>Pisang Cavendish</p>
+                                        <p>Kerupuk Udang</p>
+                                        <p>Acar Kebuli</p>
+                                        <p>Lalapan</p>
+                                        <p>Air Mineral</p>
+                                        <p>Sambal</p>
+                                        <p>Alat Makan</p>
+                                        <p>Box Thinwall</p>
+                                        <p>Box Kardus Premium</p>
+                                        <p>Goodie Bag</p>
+                                        <p>Kartu Ucapan</p>
+                                    </div>
+                                  </div>
+                                <p class="co-order__content__total" >1</p>
+                            </div>
+                        </div>
+                        <div class="co-order__content__right">
+                            <h3>Rp2.150.000</h3>
+                            <input class="co-order__content__checkbox" type="checkbox" name="checkbox">
+                        </div>
+                    </div>
+                    <div class="co-order__content__item">
+                        <div class="co-order__content__left">
+                            <img src="../public/images/produk/makanan/sate-kambing.jpeg" alt="sate">
+                            <div class="co-order__content__desc">
+                                <h3>Sate Kambing</h3>
+                                <div class="co-order__content__accordion">
+                                    <button onclick="accordion('acc-section2')" class="acc-btn">
+                                        <p>Deskripsi</p>
+                                        <img id="acc-section2-arrow" class="acc-arrow" src="https://www.eurkos.com/assets/arrow_down.svg">
+                                    </button>
+                                    <div id="acc-section2" class="acc-hide">
+                                        <p>Daging kambing pilihan yang empuk,dipanggang sempurna dengan bumbu khas dan disajikan dengan sambal kecap yang nikmat.</p>
+                                    </div>
+                                  </div>
+                                <p class="co-order__content__total" >1</p>
+                            </div>
+                        </div>
+                        <div class="co-order__content__right">
+                            <h3>Rp50.000</h3>
+                            <input class="co-order__content__checkbox" type="checkbox" name="checkbox">
+                        </div>
+                    </div>
+                    <div class="co-order__content__item">
+                        <div class="co-order__content__left">
+                            <img src="../public/images/produk/minuman/airmineral.jpg" alt="air mineral">
+                            <div class="co-order__content__desc">
+                                <h3>Air Mineral</h3>
+                                <div class="co-order__content__accordion">
+                                    <button onclick="accordion('acc-section3')" class="acc-btn">
+                                        <p>Deskripsi</p>
+                                        <img id="acc-section3-arrow" class="acc-arrow" src="https://www.eurkos.com/assets/arrow_down.svg">
+                                    </button>
+                                    <div id="acc-section3" class="acc-hide">
+                                        <p>Pilihan minuman sehat dan segar untuk menemani santapan Anda.</p>
+                                    </div>
+                                  </div>
+                                <p class="co-order__content__total">4</p>
+                            </div>
+                        </div>
+                        <div class="co-order__content__right">
+                            <h3>Rp4.000</h3>
+                            <input class="co-order__content__checkbox" type="checkbox" name="checkbox">
+                        </div>
+                    </div>
+                </div>
+                <a class="co-order__co-btn" href="payment.html">Checkout</a>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="../public/style/js/script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style/scss/index.css">
+    <title>Page Konfirmasi</title>
+</head>
+<body>
+    <header class="co-header">
+        <nav class="co-header__nav">
+            <div class="co-header__logo">
+                <a href="#p-home" class="co-header__logo__link">
+                    <img src="../public/images/logo/bersama.png" alt="logo">
+                </a>
+                <h3>RM. Bersama</h3>
+            </div>
+            <div class="co-header__menu">
+                <div class="co-header__menu__flex">
+                    <div class="co-header__menu__item none">
+                        <div class="co-header__menu__box">
+                            <div class="co-header__menu__circle"></div>
+                            <p>Checkout</p>
+                        </div>
+                        <div class="co-header__menu__row none"></div>
+                    </div>
+                    <div class="co-header__menu__item">
+                        <div class="co-header__menu__box">
+                            <div class="co-header__menu__circle"></div>
+                            <p>Pembayaran</p>
+                        </div>
+                        <div class="co-header__menu__row none"></div>
+                    </div>
+                    <div class="co-header__menu__item none">
+                        <div class="co-header__menu__box">
+                            <div class="co-header__menu__circle bold"></div>
+                            <p>Konfirmasi</p>
+                        </div>
+                        <div class="co-header__menu__row none"></div>
+                    </div>
+                    <div class="co-header__menu__item none">
+                        <div class="co-header__menu__box">
+                            <div class="co-header__menu__circle"></div>
+                            <p>Riwayat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="confirmation" >
+        <div class="confirmation__wrapper">
+            <div class="confirmation__title">
+                <h2>Konfirmasi Pembayaran</h2>
+            </div>
+            <div class="confirmation__box">
+                <form action="" class="confirmation__form">
+                    <div class="confirmation__item">
+                        <label for="">Atas Nama Rekening</label>
+                        <input type="text" name="pemilik-rekening" placeholder="Pemilik Rekening">
+                    </div>
+                    <div class="confirmation__item">
+                        <label for="">Transfer Ke</label>
+                        <input type="text" name="pemilik-rekening" placeholder="Bank - Nama Rekening">
+                    </div>
+                    <div class="confirmation__item">
+                        <label for="">Tanggal Transfer</label>
+                        <input type="text" id="dateInput" placeholder="Select a date">
+                        <div class="calendar" id="calendar">
+                        <div class="confirmation-header">
+                            <button id="prevBtn">&lt;</button>
+                            <h2 id="monthYear">Month Year</h2>
+                            <button id="nextBtn">&gt;</button>
+                        </div>
+                        <div class="days" id="daysContainer"></div>
+                        </div>
+                    </div>
+                    <div class="confirmation__item">
+                        <label for="">Jumlah Transfer</label>
+                        <input type="text" placeholder="Masukan Nominal">
+                    </div>
+                    <div class="confirmation__item">
+                        <label for="">Bukti Transfer</label>
+                        <input type="file" placeholder="Pilih Foto Bukti Transfer">
+                    </div>
+                    <a href="history.html">Kirim</a>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="../public/style/js/date-picker.js" ></script>
+</body>
+</html>

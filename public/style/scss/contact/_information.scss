@@ -1,0 +1,103 @@
+.information {
+    padding: 0px 40px;
+    margin-bottom: 50px;
+    &__content {
+        display: flex;
+        gap: 20px;
+        &__item {
+            padding: 20px;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: 0.2s ease-in;
+            &:hover {
+                background-color: #FFC107;
+                position: relative;
+                transition: 0.2s ease-out;
+                .img-absolute {
+                    width: 130px;
+                    display: block;
+                    position: absolute;
+                    right: -40px;
+                    opacity: 50%;
+                    bottom: -40px;
+                }
+                .white {
+                    display: block;
+                }
+                .orange {
+                    display: none;
+                }
+                p {
+                    color: white;
+                    
+                    
+                }
+                h3 {
+                    color: white;
+                    
+                }
+            }
+        }
+        .img-absolute {
+            display: none;
+        }
+        img {
+            width: 50px;
+        }
+        .white {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .information {
+        padding: 20px;
+        &__content {
+            flex-direction: column;
+            &__item {
+                &:hover {
+                    .img-absolute {
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575.86px) {
+    .information {
+        &__content {
+            &__item {
+                &:hover {
+                    .img-absolute {
+                        width: 100px;
+                    }
+                }
+                img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320.98px) {
+    .information {
+        &__content {
+            &__item {
+                &:hover {
+                    .img-absolute {
+                        width: 80px;
+                    }
+                }
+                img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}

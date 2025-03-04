@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style/scss/index.css">
+    <title>Payment Page</title>
+</head>
+<body>
+    <header class="co-header">
+        <nav class="co-header__nav">
+            <div class="co-header__logo">
+                <a href="#p-home" class="co-header__logo__link">
+                    <img src="../public/images/logo/bersama.png" alt="logo">
+                </a>
+                <h3>RM. Bersama</h3>
+            </div>
+            <div class="co-header__menu">
+                <div class="co-header__menu__flex">
+                    <div class="co-header__menu__item none">
+                        <div class="co-header__menu__box">
+                            <div class="co-header__menu__circle"></div>
+                            <p>Checkout</p>
+                        </div>
+                        <div class="co-header__menu__row none"></div>
+                    </div>
+                    <div class="co-header__menu__item">
+                        <div class="co-header__menu__box">
+                            <div class="co-header__menu__circle bold"></div>
+                            <p>Pembayaran</p>
+                        </div>
+                        <div class="co-header__menu__row none"></div>
+                    </div>
+                    <div class="co-header__menu__item none">
+                        <div class="co-header__menu__box">
+                            <div class="co-header__menu__circle"></div>
+                            <p>Konfirmasi</p>
+                        </div>
+                        <div class="co-header__menu__row"></div>
+                    </div>
+                    <div class="co-header__menu__item none">
+                        <div class="co-header__menu__box">
+                            <div class="co-header__menu__circle"></div>
+                            <p>Riwayat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="payment">
+                <div class="payment__container">
+                    <div class="payment__wrapper">
+                        <div class="payment__user">
+                            <div class="payment__user__customer">
+                                <h3>Indraprasta</h3>
+                                <h3>0857 4052 9930</h3>
+                            </div>
+                            <div class="payment__user__address">
+                                <p>Desa jrakah , Samping mushola rt 1 rw 2 (Rumah cat hijau), KAB. PURWOREJO - BAYAN, JAWA TENGAH</p>
+                            </div>
+                        </div>
+                        <div class="payment__product">
+                            <div class="payment__product__content">
+                                <div class="payment__product__title">
+                                    <h3>Produk Dipesan</h3>
+                                    <div class="payment__product__label">
+                                        <p>Harga Satuan</p>
+                                        <p>Jumlah</p>
+                                        <p>Subtotal Produk</p>
+                                    </div>
+                                </div>
+                                <div class="payment__product__item">
+                                    <div class="payment__product__left">
+                                        <div class="payment__product__images">
+                                            <img src="../public/images/produk/aqiqah/3.Paket-Premium-Nasi-Kebuli-1.jpg" alt="">
+                                        </div>
+                                        <div class="payment__product__desc">
+                                            <p>Aqiqah Paket Premium</p>
+                                            <div class="payment__product__accordion">
+                                                <button onclick="accordion('acc-section1')" class="acc-btn">
+                                                    <p>Deskripsi</p>
+                                                    <img id="acc-section1-arrow" class="acc-arrow" src="../public/images/icon/arrow-down-sign-to-navigate.png">
+                                                </button>
+                                                <div id="acc-section1" class="acc-hide">
+                                                    <p>Isi Dalam Paket:</p>
+                                                    <p>50 Porsi</p>
+                                                    <p>Menu Olahan Daging: Sate Kambing, Gulai Kambing, Tongseng Kambing, Rendang Kambing.</p>
+                                                    <p>Nasi Kebuli</p>
+                                                    <p>Pisang Cavendish</p>
+                                                    <p>Kerupuk Udang</p>
+                                                    <p>Acar Kebuli</p>
+                                                    <p>Lalapan</p>
+                                                    <p>Air Mineral</p>
+                                                    <p>Sambal</p>
+                                                    <p>Alat Makan</p>
+                                                    <p>Box Thinwall</p>
+                                                    <p>Box Kardus Premium</p>
+                                                    <p>Goodie Bag</p>
+                                                    <p>Kartu Ucapan</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payment__product__right">
+                                        <div class="payment__product__harga-satuan">
+                                            <p class="mobile" >Harga Satuan</p>
+                                            <p>Rp2.150.000</p>
+                                        </div>
+                                        <div class="payment__product__jumlah">
+                                            <p class="mobile" >Jumlah</p>
+                                            <p>1</p>
+                                        </div>
+                                        <div class="payment__product__subtotal">
+                                            <p class="mobile" >Subtotal Produk</p>
+                                            <b>Rp2.150.000</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment__product__item">
+                                    <div class="payment__product__left">
+                                        <div class="payment__product__images">
+                                            <img src="../public/images/produk/makanan/sate-kambing.jpeg" alt="">
+                                        </div>
+                                        <div class="payment__product__desc">
+                                            <p>Sate Kambing</p>
+                                            <div class="payment__product__accordion">
+                                                <button onclick="accordion('acc-section2')" class="acc-btn">
+                                                    <p>Deskripsi</p>
+                                                    <img id="acc-section2-arrow" class="acc-arrow" src="../public/images/icon/arrow-down-sign-to-navigate.png">
+                                                </button>
+                                                <div id="acc-section2" class="acc-hide">
+                                                    <p>Daging kambing pilihan yang empuk,dipanggang sempurna dengan bumbu khas dan disajikan dengan sambal kecap yang nikmat.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payment__product__right">
+                                        <div class="payment__product__harga-satuan">
+                                            <p class="mobile" >Harga Satuan</p>
+                                            <p>Rp50.000</p>
+                                        </div>
+                                        <div class="payment__product__jumlah">
+                                            <p class="mobile" >Jumlah</p>
+                                            <p>1</p>
+                                        </div>
+                                        <div class="payment__product__subtotal">
+                                            <p class="mobile" >Subtotal Produk</p>
+                                            <b>Rp50.000</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment__product__item">
+                                    <div class="payment__product__left">
+                                        <div class="payment__product__images">
+                                            <img src="../public/images/produk/minuman/airmineral.jpg" alt="">
+                                        </div>
+                                        <div class="payment__product__desc">
+                                            <p>Air Mineral</p>
+                                            <div class="payment__product__accordion">
+                                                <button onclick="accordion('acc-section3')" class="acc-btn">
+                                                    <p>Deskripsi</p>
+                                                    <img id="acc-section3-arrow" class="acc-arrow" src="../public/images/icon/arrow-down-sign-to-navigate.png">
+                                                </button>
+                                                <div id="acc-section3" class="acc-hide">
+                                                    <p>Pilihan minuman sehat dan segar untuk menemani santapan Anda.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payment__product__right">
+                                        <div class="payment__product__harga-satuan">
+                                            <p class="mobile" >Harga Satuan</p>
+                                            <p>Rp4.000</p>
+                                        </div>
+                                        <div class="payment__product__jumlah">
+                                            <p class="mobile" >Jumlah</p>
+                                            <p>4</p>
+                                        </div>
+                                        <div class="payment__product__subtotal">
+                                            <p class="mobile" >Subtotal Produk</p>
+                                            <b>Rp16.000</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment__transaksi">
+                            <div class="payment__transaksi__title">
+                                <h3>Metode Pembayaran</h3>
+                            </div>
+                            <div class="payment__transaksi__metode">
+                                <div class="payment__transaksi__item">
+                                    <input name="interests" type="checkbox" value="" id="qris"/>
+                                    <label class="payment__transaksi__label" for="qris">
+                                        <div class="payment__transaksi__qris">
+                                            <h3>Scan Qris</h3>
+                                            <img src="../public/images/pict/qris.png" alt="qris">
+                                        </div>
+                                    </label>
+                                    <label for="qris" class="icon-checkbox"></label>
+                                </div>
+                                <div class="payment__transaksi__item">
+                                    <input name="interests" type="checkbox" value="" id="transfer"/>
+                                    <label class="payment__transaksi__label" for="transfer">
+                                        <h3>Transfer</h3>
+                                        <div class="payment__transaksi__bank">
+                                            <div class="payment__transaksi__accordion">
+                                                <button onclick="accordion('acc-section4')" class="acc-btn">
+                                                    <p>BRI</p>
+                                                    <img id="acc-section4-arrow" class="acc-arrow" src="../public/images/icon/arrow-down-sign-to-navigate.png">
+                                                </button>
+                                                <div id="acc-section4" class="acc-hide">
+                                                    <p>Silahkan Transfer ke Nomor Rekening ini 684201021981532/Indraprasta</p>
+                                                </div>
+                                            </div>
+                                            <div class="payment__transaksi__accordion">
+                                                <button onclick="accordion('acc-section5')" class="acc-btn">
+                                                    <p>BCA</p>
+                                                    <img id="acc-section5-arrow" class="acc-arrow" src="../public/images/icon/arrow-down-sign-to-navigate.png">
+                                                </button>
+                                                <div id="acc-section5" class="acc-hide">
+                                                    <p>Silahkan Transfer ke Nomor Rekening ini 684201021981532/Indraprasta</p>
+                                                </div>
+                                            </div>
+                                            <div class="payment__transaksi__accordion">
+                                                <button onclick="accordion('acc-section6')" class="acc-btn">
+                                                    <p>Mandiri</p>
+                                                    <img id="acc-section6-arrow" class="acc-arrow" src="../public/images/icon/arrow-down-sign-to-navigate.png">
+                                                </button>
+                                                <div id="acc-section6" class="acc-hide">
+                                                    <p>Silahkan Transfer ke Nomor Rekening ini 684201021981532/Indraprasta</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label for="transfer" class="icon-checkbox"></label>
+                                </div>
+                                <div class="payment__transaksi__item">
+                                    <input name="interests" type="checkbox" value="" id="cod"/>
+                                    <label class="payment__transaksi__label" for="cod">
+                                      <div class="payment__transaksi__cash">
+                                        <h3>Cash/COD</h3>
+                                        <img src="../public/images/icon/cash-on-delivery.png" alt="cod">
+                                      </div>
+                                    </label>
+                                    <label for="cod" class="icon-checkbox"></label>
+                                </div>
+                            </div>
+                            <div class="payment__transaksi__all-total">
+                                <div class="left">
+                                    <p>Subtotal Untuk Produk</p>
+                                    <p>Total Pembayaran</p>
+                                </div>
+                                <div class="right">
+                                    <p>Rp2.216.000</p>
+                                    <h3>Rp2.216.000</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment__next-prev">
+                            <a href="checkout.html" class="payment__btn-next">Kembali</a>
+                            <a href="confirmation.html" class="payment__btn-next">Bayar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="../public/style/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+.confirmation {
+    padding: 40px;
+    a {
+        padding: 10px;
+        background: #FFC107;
+        color: white;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #FFC107;
+        transition: 0.2sease-in;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:hover {
+            color: #FFC107;
+            border: 1px solid #FFC107;
+            background: transparent;
+            transition: 0.2s ease-in;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__box {
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        padding: 20px 40px 20px 20px;
+        background: white;
+        flex-direction: column;
+        display: flex;
+        width: 50%;
+        margin-top: 20px;
+    }
+    &__form {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    &__item {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        .calendar {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            position: absolute;
+            z-index: 1;
+            display: none;
+          }
+          
+        .confirmation-header {
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        #prevBtn,
+        #nextBtn {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #monthYear {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            padding: 10px;
+        }
+
+        .day {
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .day.current {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .day.selected {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        #dateInput,
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .confirmation {
+        padding: 20px 60px;
+        h2 {
+            font-size: 20px;
+        }
+        a {
+            padding: 8px;
+        }
+        &__box {
+            width: 100%;
+            #dateInput {
+                padding: 8px;
+            }
+            input {
+                padding: 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320.98px) {
+    .confirmation {
+        padding: 20px 40px;
+        h2 {
+            font-size: 14px;
+        }
+        a {
+            padding: 6px;
+        }
+        &__box {
+            #dateInput {
+                padding: 6px;
+            }
+            input {
+                padding: 6px;
+            }
+        }
+    }
+}
